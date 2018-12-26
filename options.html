@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html id="html-body">
+    <head>
+        <title>Calendar Notes</title>
+        <script src="jquery-3.1.0.min.js"></script>
+        <script src="options.js"></script>
+    </head>
+<style>
+.grid-container {
+	display: grid;
+	grid-template-columns: 185.7px 185.7px 185.7px 185.7px 185.7px 185.7px 185.7px;
+	background-color: #FFFFFF;
+	float: left;
+}
+.grid-item {
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	font-size: 10px;
+	text-align: left;
+}
+
+#filler {
+  float: left;
+  padding: 0px 300px 850px 0px;
+}
+
+#titleContainer {
+  margin: 0px;
+}
+
+#clear {
+  float: right;
+}
+
+#prevMonth, #nextMonth {
+  margin: 0px 0px 3px 0px;
+}
+
+</style>	
+    <body id="container">
+        <h2 id="titleContainer">
+	  <input id="prevMonth" type="submit" value="<">
+	  <input id="nextMonth" type="submit" value=">">
+	  <span id="monthTitle" ></span>
+	  <span id="yearTitle" ></span>
+	  <input id="clear" type="submit" value="Clear">
+	</h2>
+
+	<div id="calendar-grid" class="grid-container float-left"></div>
+	<h3 id="filler"></h3>
+    </body>
+</html>
